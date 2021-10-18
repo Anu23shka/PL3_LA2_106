@@ -1,0 +1,264 @@
+
+body {
+    color: #fff;
+    background-color:'powderblue';
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 80%;
+}
+
+h1, h3, h4, h5 {
+    color: white;
+    font-weight: 400;
+}
+h2, h6{
+    color: black;
+    font-weight: 400;
+}
+
+
+a {
+    color: #d83c0d;
+    transition: .3s ease;
+}
+
+a:hover {
+    color: rgb(50, 8, 235);
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.6875rem;
+    margin-bottom: 1.875rem;
+    opacity: .5;
+}
+
+section {
+    position: relative;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+.btn {
+    border-radius: 0;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0);
+    display: inline-block;
+    font-weight: 500;
+    font-size: .875rem;
+    padding: .75rem 1.25rem;
+    position: relative;
+    outline: none !important;
+    text-transform: uppercase;
+}
+
+.btn span {
+    transition: .3s ease;
+}
+
+
+[class*="btn-outline-"] {
+    box-shadow: none;
+}
+
+
+.card {
+    backface-visibility: hidden;
+    border: none;
+    box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
+    margin-bottom: 1.875rem;
+    overflow: hidden;
+}
+.card-title{
+    margin-bottom:.75rem
+}
+.text-center{text-align:center!important}
+.text-left{text-align:left!important}
+
+.container{
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+.row{
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap:wrap;
+    margin-right:-15px;
+    margin-left:-15px
+}
+.col{
+    flex-basis:0;
+    -ms-flex-positive:1;
+    flex-grow:1;
+    max-width:100%
+
+}
+.col-md-6 .col-md-12 .col-md-4{
+    position:relative;
+    width:100%;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px
+}
+
+
+.card{
+    position:relative;
+    display:-ms-flexbox;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    word-wrap:break-word
+    ;background-color:rgb(24, 22, 22);
+    background-clip:border-box;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius:.25rem
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.card>hr{
+    margin-right:0;
+    margin-left:0
+}
+.card>.list-group:first-child 
+.list-group-item:first-child{
+    border-top-left-radius:.25rem;
+    border-top-right-radius:.25rem
+}
+.card>.list-group:last-child .list-group-item:last-child{
+    border-bottom-right-radius:.25rem;
+    border-bottom-left-radius:.25rem
+}
+.card-body{
+    
+    flex:1 1 auto;
+    padding:1.25rem
+}
+.bg-dark{
+    background-color:#343a40!important
+}
+.bg-white{background-color:#fff!important}
+.collapse:not(.show){display:none}
+
+.fixed-top{position:fixed;top:0;right:0;left:0;z-index:1030}
+
+.mr-2,.mx-2{margin-right:.5rem!important}
+
+.btn{
+    display:inline-block;
+    font-weight:400;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    user-select:none;
+    border:1px solid transparent;
+    padding:.375rem .75rem;
+    font-size:1rem;
+    line-height:1.5;
+    border-radius:.25rem;
+    transition:color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out
+}
+.btn-outline-light{
+    color:#f8f9fa;
+    background-color:transparent;
+    background-image:none;
+    border-color:#f8f9fa
+}
+
+
+#ts-content .ts-bubble-border, #ts-footer .ts-bubble-border {
+    padding: 1.5rem 2.25rem;
+}
+
+@media (min-width: 75rem) {
+    html {
+        font-size: 100%;
+    }
+
+    h1, .ts-h1 {
+        font-size: 3.5rem;
+    }
+
+    h2, .ts-h2 {
+        font-size: 2.25rem;
+    }
+
+    h3, .ts-h3 {
+        font-size: 1.875rem;
+    }
+    .ts-block {
+        padding-bottom: 8.125rem;
+        padding-top: 8.125rem;
+    }
+
+    .ts-card__image {
+        height: 15.625rem;
+    }
+
+    .floated form {
+        padding: 2.5rem 5rem;
+    }
+}
+
+@media (min-width: 62rem) {
+    h1, .ts-h1 {
+        margin-bottom: 2.5rem;
+    }
+
+    .ts-title {
+        margin-bottom: 5rem;
+    }
+
+    .ts-block-inside {
+        padding: 3.75rem;
+    }
+
+
+    .floated {
+        position: absolute;
+    }
+}
